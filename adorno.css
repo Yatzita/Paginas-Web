@@ -1,0 +1,12 @@
+*{
+    text-align: left;
+    color: rgb(11, 11, 102);
+    font-family: 'Courier New', Courier, monospace;
+;
+}
+a :hover{
+text-decoration:none ;
+    text-align:left;
+    color: rgb(4, 4, 66);
+    font-family: 'Courier New', Courier, monospace;
+}
