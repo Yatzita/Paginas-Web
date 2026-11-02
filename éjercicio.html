@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio</title>
+</head>
+<body>
+    <h2>Ejercicio confirm()</h2>
+    <script>
+        let continuar=prompt(`¿Deseas agregar sus datos?`);
+        if (continuar){
+        let nombre=prompt(`Ingresa tu nombre`);
+        let edad=Number(prompt(`Ingrese su edad`));
+        let esp=prompt(`Ingresa tu especialidad`);
+        let correo=prompt(`Ingresa tu correo electronico`);
+        
+            document.write(
+            "Nombre: "+nombre+"<br>"+
+            "Edad: "+edad+"<br>"+
+            "Especialidad: "+esp+"<br>"+
+            "Correo electronico: "+correo+"<br>");
+        }else{
+            alert("Eres floj@");
+        }
+    </script>
+     
+</body>
+</html>
