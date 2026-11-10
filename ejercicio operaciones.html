@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Operaciones básicas</title>
+</head>
+<body>
+
+    <h2>Operaciones Básicas</h2>
+
+    <script>
+        let num1 = Number(prompt("Ingresa el primer número"));
+        let num2 = Number(prompt("Ingresa el segundo número"));
+        let operacion = prompt("Ingresa la operación (suma, resta, multiplicacion, division)");
+      
+
+        switch (operacion) {
+            case "suma":
+                resultado = num1 + num2;
+                break;
+
+            case "resta":
+                resultado = num1 - num2;
+                break;
+
+            case "multiplicacion":
+                resultado = num1 * num2;
+                break;
+
+            case "division":
+                resultado = num1 / num2;
+                break;
+
+            default:
+                resultado = "Operación no válida";
+        }
+
+       
+        document.write("Elegiste la operación de: "+operacion+"<br>");
+        document.write("Resultado: " + resultado);
+    </script>
+
+</body>
+</html>

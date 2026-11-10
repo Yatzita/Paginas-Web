@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Promedio</title>
+</head>
+<body>
+
+    <h2>Promedio del estudiante</h2>
+
+    <script>
+        let nombre = prompt("Ingresa tu nombre");
+        let grupo = prompt("Ingresa tu grupo");
+
+        let p1 = Number(prompt("Ingresa la calificación del primer parcial"));
+        let p2 = Number(prompt("Ingresa la calificación del segundo parcial"));
+        let p3 = Number(prompt("Ingresa la calificación del tercer parcial"));
+
+        let suma = p1 + p2 + p3;
+        let promedio = suma / 3;
+
+        document.write("Nombre: " + nombre + "<br>");
+        document.write("Grupo: " + grupo + "<br>");
+        document.write("Primer parcial: " + p1 + "<br>");
+        document.write("Segundo parcial: " + p2 + "<br>");
+        document.write("Tercer parcial: " + p3 + "<br>");
+        document.write("Puntos acumulados: " + suma + "<br>");
+        document.write("Promedio: " + promedio + "<br>");
+
+        if (suma >= 18) {
+            document.write("¡Aprobaste!");
+        } else {
+            document.write("No aprobaste");
+        }
+
+    </script>
+
+</body>
+</html>
