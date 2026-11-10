@@ -6,12 +6,14 @@
     <title>Ejemplo</title>
 </head>
 <body>
-    <h1 id="mensaje">Hola</h1>
+      <h1 id="mensaje">Hola</h1>
+
     <script>
-        const nombre="Mizi";
-        let edad=17;
-        document.getElementById("mensaje").textContent=
-        "hola"+nombre+"Tienes"+edad+"  años";
+        const nombre = "Mizi";
+        let edad = 17;
+
+        document.getElementById("mensaje").innerHTML =
+        "Hola " + nombre + "<br><br>Tienes " + edad + " años";
     </script>
 </body>
 </html>
