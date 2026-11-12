@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Ejercicio DOM</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+     </head>
+
+    <body>
+        <h2>Ejercicio DOM</h2>
+
+        <p id="mensaje">Hola Mundo</p>
+        <div id="imagen"></div>
+        <p id="aviso">Mensaje Inicial</p>
+        <button id="btn">Clic</button>
+        <p class="destacado">Texto importante</p>
+        <button class="btn">Enviar</button>
+        <br><br>
+
+        <a href="index.html">Ir al Inicio</a>
+
+        <script>
+            document.getElementById("mensaje").innerHTML="Bienvenido";
+
+            document.getElementById("imagen").innerHTML='<img src="https://i.pinimg.com/736x/9b/98/31/9b9831f31ec25ec15e17512e6db3aa95.jpg" alt="mizi">';
+
+            var elem=document.getElementById("aviso");
+            elem.textContent="Hola Estudiantes";
+
+            document.getElementById("btn").style.backgroundColor="lightpink";
+
+            document.querySelector(".destacado").style.color="hotpink";
+
+            document.querySelector(".btn").disabled=true;
+        </script>
+    </body>
+</html>
