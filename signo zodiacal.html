@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Signos zodiacales</title>
+</head>
+<body>
+
+    <h2>Signo Zodiacal</h2>
+
+    <script>
+        let nombre = prompt("Ingresa tu nombre");
+        let dia = Number(prompt("Ingresa tu día de nacimiento"));
+        let mes = Number(prompt("Ingresa tu mes de nacimiento (1-12)"));
+       
+
+        switch (mes) {
+            case 1:
+                if (dia <= 19) {
+                    signo = "Capricornio";
+                } else {
+                    signo = "Acuario";
+                }
+                break;
+
+            case 2:
+                if (dia <= 18) {
+                    signo = "Acuario";
+                } else {
+                    signo = "Piscis";
+                }
+                break;
+
+            case 3:
+                if (dia <= 20) {
+                    signo = "Piscis";
+                } else {
+                    signo = "Aries";
+                }
+                break;
+
+            case 4:
+                if (dia <= 19) {
+                    signo = "Aries";
+                } else {
+                    signo = "Tauro";
+                }
+                break;
+
+            case 5:
+                if (dia <= 20) {
+                    signo = "Tauro";
+                } else {
+                    signo = "Géminis";
+                }
+                break;
+
+            case 6:
+                if (dia <= 20) {
+                    signo = "Géminis";
+                } else {
+                    signo = "Cáncer";
+                }
+                break;
+
+            case 7:
+                if (dia <= 22) {
+                    signo = "Cáncer";
+                } else {
+                    signo = "Leo";
+                }
+                break;
+
+            case 8:
+                if (dia <= 22) {
+                    signo = "Leo";
+                } else {
+                    signo = "Virgo";
+                }
+                break;
+
+            case 9:
+                if (dia <= 22) {
+                    signo = "Virgo";
+                } else {
+                    signo = "Libra";
+                }
+                break;
+
+            case 10:
+                if (dia <= 22) {
+                    signo = "Libra";
+                } else {
+                    signo = "Escorpio";
+                }
+                break;
+
+            case 11:
+                if (dia <= 21) {
+                    signo = "Escorpio";
+                } else {
+                    signo = "Sagitario";
+                }
+                break;
+
+            case 12:
+                if (dia <= 21) {
+                    signo = "Sagitario";
+                } else {
+                    signo = "Capricornio";
+                }
+                break;
+
+            default:
+                signo = "Mes no válido";
+        }
+
+        document.write("Nombre: " + nombre + "<br>");
+        document.write("Tu signo zodiacal es: " + signo);
+    </script>
+
+</body>
+</html>
